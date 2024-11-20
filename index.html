@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>password generator</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Rajdhani:wght@300;400;500;600;700&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <h1>Generador de Password</h1>
+      <div class="cell">
+        <span id="password">-----------------------------</span>
+        <button id="copy-btn"><img src="img/copiar.png" alt=""></button>
+      </div>
+      <div class="controls">
+        <div class="barra">
+        <label for="length">Longitud de la Contraseña: <span id="lenght.psw">12</span></label>
+        <input type="range" id="length" min="4" max="20" step="1" onchange="valor(this.value)"/>
+      </div>
+        <div class="selectores">
+          <li><input type="checkbox" id="mayusculas" name="agree">
+            <label for="agree">incluir mayusculas</label></li>
+          <li><input type="checkbox" id="minusculas" name="agree">
+            <label for="agree">incluir minusculas</label></li>
+          <li><input type="checkbox" id="numeros" name="agree">
+            <label for="agree">incluir numeros</label></li>
+          <li><input type="checkbox" id="simbolos" name="agree">
+            <label for="agree">incluir simbolos</label></li>
+            <div id="warningMessage">
+              Por favor selecciona al menos una opción!
+          </div>
+          <div id="password-strength-container">
+            <span id="password-strength-text">Fuerza de la contraseña: </span>
+            <div class="left-side">
+              <span id="password-strength-message"></span>
+            <div class="strength-boxes">
+              <div id="weak" class="strength-box"></div>
+              <div id="moderate" class="strength-box"></div>
+              <div id="strong" class="strength-box"></div>
+              <div id="very-strong" class="strength-box"></div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <button id="generate" onclick="generateRandomNumber()">Generar ➡️</button>
+      </div>
+      <script src="main.js"></script>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,206 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  h1 {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  #root, #__next {
+    isolation: isolate;
+  }
+  
+  body {
+    background-color: #131218;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+  }
+  
+  main {
+    padding: 2rem;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  .cell {
+    display: flex;
+    width: 600px;
+    height: 80px;
+    background-color: #24232b;
+    color: #b9b9b9;  
+    margin-bottom: 2rem;
+    padding: 1rem; 
+  }
+  
+  button#copy {
+    background-color: none;
+    width: 50px;
+  }
+  
+  button#copy:hover {
+    background-color: #a3ffaf;
+  }
+  
+  .cell span {
+    color: inherit;
+    font-weight: bold;
+    line-height: 1.5;
+    font-size: 1.8rem;
+  }
+  
+  .controls {
+    display: flex;
+    flex-direction: column;  
+    height: 33rem;
+    margin-top: 1rem;
+    background-color: #1e1d24;
+    padding: 2rem;
+  }
+  .barra label {
+    display: flex;
+    justify-content: space-between;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-size: 20px;
+    align-items: center;
+  }
+  .barra span {
+    font-size: 30px;
+  }
+  
+  .controls button {
+    background-color: #a3ffaf;
+    color: #24232b;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .controls button:hover {
+    background-color: #7fffa3;
+  }
+  
+  .controls input[type="range"] {
+    width: 100%;
+    margin-top: 0.5rem;
+    accent-color: #7fffa3;;
+  }
+  
+  .selectores {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    margin-top: 1.5rem;
+  }
+  .selectores input[type="checkbox"] {
+    margin-right: 1rem;
+    transform: scale(1.5);
+    accent-color: #7fffa3;
+  }
+  .selectores li {
+    padding: .5rem;
+    list-style: none;
+  }
+
+  #warningMessage {
+    color: red; 
+    display: none;
+  }
+  
+  #password {
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+
+  #password-strength-container {
+    display: flex;
+    width: 33.5rem;
+    height: 4rem;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: #18171f;
+  }
+  
+  .controls label span {
+    color: #7fffa3;
+  }
+  .strength-boxes {
+    display: flex;
+    justify-content: space-between;
+    width: 5rem;
+    height: 2rem;
+    
+  }
+  
+  .strength-box {
+    display: flex;
+    border: 2px solid white;
+    background-color: #24232b;
+    width: 1rem;
+    text-align: center;
+  }
+  
+  .weak {
+    background-color: yellow;
+  }
+  
+  .moderate {
+    background-color: yellow;
+  }
+  
+  .strong {
+    background-color: yellow;
+  }
+  
+  .very-strong {
+    background-color: yellow;
+  }
+
+  .left-side {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%;
+  }
+  
+#password-strength-text {
+  text-transform: uppercase;
+}
+
+#password-strength-message {
+  text-transform: uppercase;
+}
+#copy-btn {
+  display: flex;
+  width: 10%;
+  background-color: #7fffa3;
+}

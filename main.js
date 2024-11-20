@@ -66,6 +66,11 @@
 
     function updatePasswordStrength(passwordLength){
 
+    weakIndicator.classList.remove("weak");
+    moderateIndicator.classList.remove("moderate");
+    strongIndicator.classList.remove("strong");
+    veryStrongIndicator.classList.remove("very-strong");
+
   if (passwordLength >= 4 && passwordLength <= 8) {
     weakIndicator.classList.add("weak")
     moderateIndicator.classList.add("inactive")
